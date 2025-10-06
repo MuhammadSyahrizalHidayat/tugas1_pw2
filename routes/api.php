@@ -10,6 +10,7 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
+//Untuk API/Postman Movie dan Showtime
 Route::get('/Movie', [MovieController::class,'index']);
 Route::get('/Showtime', [ShowtimeController::class,'index']);
 Route::post('/Movie', [MovieController::class,'index']);
